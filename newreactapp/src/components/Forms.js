@@ -27,6 +27,12 @@ class Forms extends Component{
         type === "checkbox" ?  this.setState({[name] : checked}) : this.setState({[name] : value})
     }
 
+    //If below arrow function used in method no need to bind method in constructor
+    // handleEvent =(event) => {
+    //     const {name,value,type,checked} = event.target;
+    //     type === "checkbox" ?  this.setState({[name] : checked}) : this.setState({[name] : value})
+    // }
+
     render(){
         return(
            <FormComponent 
